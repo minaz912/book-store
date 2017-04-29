@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import * as bookActions from '../../actions/bookActions';
 
@@ -37,6 +38,11 @@ class Book extends React.Component {
     );
   }
 }
+
+Book.propTypes = {
+  books: PropTypes.array,
+  createBook: PropTypes.func
+};
 
 const mapStateToProps = (state) => {
   return {
