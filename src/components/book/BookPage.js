@@ -19,7 +19,7 @@ class Book extends React.Component {
         <h3>Books</h3>
         <ul>
           {/* traverse books array */}
-          {this.props.books.map((b, i) => <li key={i}>{b.title}</li>)};
+          {this.props.books.map((b, i) => <li key={i}>{b.title}</li>)}
         </ul>
         <div>
           <h3>Books Form</h3>
